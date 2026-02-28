@@ -1,0 +1,189 @@
+/* Variables */
+
+:root {
+    --black: #000;
+    --off-white: #F8FAFC;
+    --primary-red: #BD3A5A;
+    --hover-red: #84283F;
+    --secondary-blue: #005A8F;
+    --tertiary-navy: #002439;
+    --white: #fff;
+    --nav-li-hero-a: 1.25rem;
+    --h1: 4.5rem;
+    --p: 1.125rem;
+    --hero-p-main-h2: 2.25rem;
+    --main-a: 1.375rem;
+}
+
+body {
+    background-color: #F1F5F9;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--black);
+}
+
+/* Utility Classes */
+
+.inner-container {
+    width: 1310px;
+    margin: 0 auto;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flexed-items {
+    display: flex;
+    align-items: flex-start;
+}
+
+/* Typography */
+
+h1 {
+    font-size: var(--h1);
+    margin-bottom: 1.69rem;
+}
+
+h2 {
+    font-size: var(--hero-p-main-h2);
+}
+
+.hero p {
+    font-size: var(--hero-p-main-h2);
+    color: var(--off-white);
+}
+
+p {
+    font-size: var(--p);
+}
+
+/* Header */
+header {
+    background-color: var(--white);
+    align-items: center;
+}
+
+nav {
+    padding: 0.5rem;
+}
+
+nav a{
+    font-size: var(--nav-li-hero-a);
+    text-decoration: none;
+}
+
+.sign-in-button a{
+    background-color: var(--primary-red);
+    color: var(--off-white);
+    padding: 0.75rem 1rem;
+    margin-left: 28rem;
+}
+
+nav a:hover,
+nav a:focus {
+    text-decoration: underline;
+    text-decoration-color: var(--primary-red);
+}
+
+.sign-in-button a:hover,
+.sign-in-button a:focus {
+    background-color: var(--hover-red);
+    text-decoration: none;
+}
+
+/* Banner */
+
+.hero-banner {
+    background-color: var(--secondary-blue);
+    color: var(--off-white);
+    display: flex;
+    padding: 5.06rem 6.31rem;
+    align-items: center;
+    gap: 2.13rem;
+    margin-bottom: 5.06rem;
+}
+
+.hero-banner a {
+    font-size: var(--nav-li-hero-a);
+    border: 1px solid var(--off-white);
+    padding: 0.75rem 1rem;
+    text-decoration: none;
+}
+
+.hero-banner a:hover,
+.hero-banner a:focus {
+    background-color: var(--off-white);
+    color: var(--secondary-blue);
+}
+
+.hero-banner p {
+    font-size: var(--hero-p-main-h2);
+}
+
+/* Card Deck */
+
+.card {
+    background-color: var(--white);
+    margin-bottom: 3.37rem;
+    display: flex;
+    width: 53.9rem;
+    padding: 1.69rem;
+}
+
+.card h2 {
+    font-size: var(--hero-p-main-h2);
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.card p {
+    font-size: var(--p);
+}
+
+.card a {
+    font-size: var(--main-a);
+    color: var(--primary-red);
+    font-weight: 700;
+}
+
+.card a:hover,
+.card a:focus {
+    color: var(--hover-red);
+}
+
+.game-night img {
+    margin-bottom: 1.69rem;
+}
+
+aside {
+    background-color: var(--white);
+    padding: 1.69rem;
+    margin-left: 2.31rem;
+    text-align: center;
+}
+
+aside h2 {
+    font-size: var(--hero-p-main-h2);
+    font-weight: 400;
+    margin-bottom: 3.37rem;
+}
+
+aside p {
+    margin-bottom: 3.37rem;
+}
+
+aside div:nth-of-type(3) > p {
+    margin-bottom: 0;
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    font-size: 1rem;
+    background-color: var(--tertiary-navy);
+    color: var(--off-white);
+    padding: 3.37rem 11.81rem;
+    gap: 2.21rem;
+}
